@@ -85,6 +85,11 @@ header p {
   border-color: #3c8379;
 }
 
+#card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #challenges {
   max-width: 50rem;
   margin: 3rem auto;

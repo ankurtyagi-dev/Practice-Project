@@ -10,13 +10,15 @@ function App() {
       <TimerChallenge title="Not Easy" targetTime={5} />
       <TimerChallenge title="Getting Tough" targetTime={10} />
       <TimerChallenge title="Pros Only" targetTime={15} /> */}
-      {DATA.map((challenge, index) => (
-        <TimerChallenge
-          key={index}
-          title={challenge.title}
-          targetTime={challenge.targetTime}
-        />
-      ))}
+      <div id="card">
+        {DATA.map((challenge, index) => (
+          <TimerChallenge
+            key={index}
+            title={challenge.title}
+            targetTime={challenge.targetTime}
+          />
+        ))}
+      </div>
     </>
   );
 }
